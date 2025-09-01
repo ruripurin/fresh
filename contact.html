@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fresh</title>
+    <meta name="description" content="Freshは、新鮮な材料の使用と満足感にこだわった、アメリカ発のハンバーガーショップです。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+<body>
+  <header id="header">
+    <h1 class="logo">
+        <a href="index.html">
+          <img src="img/common/logo.svg" alt="Fresh">
+        </a>
+      </h1>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navi">
+        <ul class="menu">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="secret.html">Freshのヒミツ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+    <main>
+      <div class="page-header">
+        <h1 class="page-title">
+          <span class="ja">お問い合わせ</span>
+          <span class="en">CONTACT</span>
+        </h1>
+      </div>
+
+      <div class="page-head-text wrapper">
+        <p class="title">あなたのリクエストを<br class="sp">お寄せください！</p>
+        <p class="text">お客様の想いに応えるため、リクエストを募集しております。<br>些細なことでも構いませんので、ぜひご協力お願いいたします。<br>通常のお問い合わせも下記のフォームから可能です。</p>
+      </div>
+
+      <section class="contact-form wrapper">
+        <h2 class="section-title">お問い合わせフォーム</h2>
+        <form action="" method="post">
+          <dl>
+            <dt>お問い合わせ内容<span class="require">*</span></dt>
+           
+            <dd class="radio-group">
+              <div class="item-group">
+                <input type="radio" id="product" name="kind" value="商品に関するお問い合わせ">
+                <label for="product">商品関連</label>           
+              </div>
+
+              <div class="item-group">
+                <input type="radio" id="shop" name="kind" value="店舗に関するお問い合わせ">
+                <label for="shop">店舗関連</label>           
+              </div>
+
+               <div class="item-group">
+                <input type="radio" id="request" name="kind" value="リクエスト">
+                <label for="request">リクエスト</label>           
+              </div>
+
+               <div class="item-group">
+                <input type="radio" id="other" name="kind" value="その他">
+                <label for="other">その他</label>           
+              </div>            
+            </dd>
+
+            <dt><label for="name">お名前</label><span class="require">*</span></dt>
+            <dd><input id="name" type="text" name="name"></dd>
+
+            <dt><label for="email">メールアドレス</label><span class="require">*</span></dt>
+            <dd><input id="email" type="email" name="email"></dd>
+
+            <dt><label for="tel">電話番号</label></dt>
+            <dd><input id="tel" type="tel" name="tel"></dd>
+
+            <dt><label for="message">詳細内容</label><span class="require">*</span></dt>
+            <dd><textarea id="message" name="message"></textarea></dd>
+                
+          </dl>
+          <div class="btn"><input type="submit" value="送信する"></div>
+        </form>
+      </section>
+
+      <section class="voice wrapper">
+        <h2 class="section-title2">お客様の声を紹介</h2>
+       
+          <div class="text">
+            <p class="comment">Freshのバーガーは、バンズやパティはもちろん、とにかく野菜が瑞々しくて美味しいです。<br>そこでなのですが、野菜をメインにしたバーガーを作っていただくことはできないでしょうか？</p>
+            <p class="answer">こちらの声から「フレッシュサラダバーガー」が生まれました。</p>
+          </div>
+       
+          <div class="text">
+            <p class="comment">アメリカに旅行に行ったときFreshでバーガーを食べたが、<br>日本の店舗よりもっと思い切った奇抜なメニューが多かったように思った。<br>無難なものもいいが、もっとワクワク感のある商品を多く出してくれたら嬉しい。</p>
+            <p class="answer">こちらの声にお応えして、現在期間限定で「闇の黒バンズバーガー」を販売しております。</p>
+          </div>
+    
+          <div class="text">
+            <p class="comment">いつも子供と一緒にFreshさんのハンバーガーを美味しくいただいてます。<br>飽きのこない味で大好きです。<br>ですが近頃、ハンバーガーをひとつ食べ切るのが難しくなってきました。<br>もう少し小さいサイズを用意してもらうことはできますか？</p>
+            <p class="answer">頂いた意見を元に、現在小さいサイズのハンバーガーの販売に向けて動いております。<br>今しばらくお待ちくださいませ。</p>
+          </div>
+      </section>
+
+      <div class="img">
+        <img src="img/contact/burger.jpg">
+      </div>
+   
+    </main>
+
+  
+  <footer id="footer">
+      <div class="inner wrapper">
+        <div class="logo">
+          <img src="img/common/logo.svg" alt="FRESH">
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="secret.html">Freshのヒミツ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <p class="copyright">Copyright © Fresh. All rights reserved.</p>
+
+    </footer>
+</body>
+
+</html>
